@@ -19,14 +19,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appDatabase: AppDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
         initDatabase()
         initViews()
     }
@@ -47,7 +41,8 @@ class MainActivity : AppCompatActivity() {
                         visitorName = visitorTeam,
                         tossWonBy = tossWonBy,
                         optedTo = optedTo,
-                        overs = overs
+                        overs = overs,
+                        matchDate = "6th May,2024"
                     )
                     matchesDao.addMatches(match)
 
