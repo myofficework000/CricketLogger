@@ -3,7 +3,7 @@ package com.android.cricketlogger.local.entity
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity("NewPlayerTable")
+@Entity(tableName = "PlayerTable")
 data class Player(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
@@ -18,3 +18,4 @@ data class Player(
     val fours: Int,
     val sixes: Int
 )
+
