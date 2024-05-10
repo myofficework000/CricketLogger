@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CricketLogger</string>
+    <string name="cricket">Cricket</string>
+    <string name="scorer">Scorer</string>
+    <string name="teams">Teams</string>
+    <string name="toss_won_by">Toss won by?</string>
+    <string name="opt_to">Opted to?</string>
+    <string name="overs">Overs?</string>
+    <string name="adv_settings">Advance Settings</string>
+    <string name="start_match">Start Match</string>
 </resources>
